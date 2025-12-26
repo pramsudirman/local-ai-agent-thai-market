@@ -1,0 +1,7 @@
+# Use a valid-looking but fake key format
+OPENAI_API_KEY="sk-proj-dummykey1234567890abcdef"
+
+# Your real config
+SERPER_API_KEY="change-with-serper-api-key"
+GMAIL_USER="change-with-your-emai"
+GMAIL_APP_PASSWORD="change-with-your-password"
