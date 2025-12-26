@@ -124,6 +124,7 @@ It’s efficient. It’s ambitious. It’s probably going to result in me accide
 📬 Get the Report
 --
 If you’d like to receive these weekly reports (and witness the gradual improvement of both my Thai and my agent’s sanity), drop your email here:
+https://airtable.com/app0mzmjk6SConlTo/pag0ntw9HNnMcYFJw/form
 
 
 ----
