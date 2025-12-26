@@ -124,3 +124,85 @@ It’s efficient. It’s ambitious. It’s probably going to result in me accide
 📬 Get the Report
 --
 If you’d like to receive these weekly reports (and witness the gradual improvement of both my Thai and my agent’s sanity), drop your email here:
+
+
+----
+🧠 How It Works (The Architecture)
+--
+Because my MacBook Air starts hyperventilating if it tries to think in two languages simultaneously, I had to get creative with the architecture.
+
+I couldn't just ask the AI to "Research in English and then translate to Thai" in one breath. It would inevitably forget what it was doing halfway through, or worse, start hallucinating Chinese characters out of sheer confusion.
+
+Instead, I use a two-step sequential process with a manual stitch. It goes like this:
+
+<img width="1499" height="3065" alt="Mermaid Chart - Create complex, visual diagrams with text -2025-12-26-090840" src="https://github.com/user-attachments/assets/47ee315a-5851-435e-a5eb-7fbfdf94c74e" />
+
+⚙️ Installation (Join the 8GB Club)
+-
+Want to run this locally and heat up your own apartment? Here is how to get it running on constrained hardware.
+
+Prerequisites:
+- Python 3.10+
+- Ollama (for running local models)
+- A Serper.dev API key (free tier is fine for weekly runs)
+- An SMTP email account (like Gmail app password) to send the results.
+
+Step 1: The Local LLM Setup (Crucial)
+---
+First, download and install Ollama.
+
+Next, open your terminal. We need to pull the specific model that strikes the balance between "actually smart" and "won't crash an M1 Air." That model is Qwen 2.5 3B (Quantized 4-bit).
+
+Run this command:
+```
+ollama pull qwen2.5:3b-instruct-q4_0
+```
+Warning: Do not get cocky and try to pull the 7B or 14B versions unless you have the RAM to back it up. My agent is explicitly coded to look for this specific 3B model tag.
+
+Step 2: Clone and Venv
+--
+```
+git clone [your-repo-url-here]
+cd thai-digital-analyst
+python -m venv venv
+source venv/bin/activate  # (On Windows use: venv\Scripts\activate)
+```
+
+Step 3: Install Dependencies
+--
+```
+pip install -r requirements.txt
+```
+(Note for you: Make sure you generate a requirements.txt containing: crewai, crewai-tools, langchain-ollama, python-dotenv, and whatever email library you used).
+
+Step 4: Environment Variables
+--
+Duplicate the .env.example file to .env:
+
+cp .env.example .env
+Populate your .env file. It should look something like this:
+
+```
+#THE FAKE KEY (Required by CrewAI to not crash, even though we don't use it)
+OPENAI_API_KEY=sk-proj-dummykey1234567890abcdef
+#THE REAL KEYS
+SERPER_API_KEY=your_actual_serper_key_here
+# EMAIL CONFIG (For sending the report)
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your.email@gmail.com
+SMTP_PASSWORD=your_app_specific_password
+RECIPIENT_EMAIL=where.the.report.goes@email.com
+```
+Step 5: Run It
+--
+Take a deep breath, ensure Ollama is running in the background, and run:
+
+```
+python src/main.py
+```
+Go grab a coffee. It takes about 3-5 minutes on the M1 Air. If everything works, you'll see the console producing research, then translation, and finally, a fresh email in your inbox.
+
+License
+--
+MIT. Go wild. Just don't blame me if the AI hallucinates that TikTok has bought the Bank of Thailand.
