@@ -1,4 +1,4 @@
-# simple-local-ai-agent-thai-market
+# Simple Local AI agent for Thai market
 
 🇹🇭 The "Christmas Itch" Thai Digital Analyst
 
