@@ -1,0 +1,7 @@
+{
+  "num_ctx": 2048,
+  "num_gpu": 1,
+  "num_thread": 4,
+  "low_vram": true,
+  "timeout": 300
+}
