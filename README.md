@@ -12,6 +12,7 @@ It is also, for the record, 100% free.
 ----
 
 🛠 The "I Have No Budget" Tech Stack
+--
 Building an AI agent is quite easy when you have a supercomputer and a venture capital firm paying your electric bill. It is significantly more "charming" when you are doing it on a MacBook Air M1 with 8GB of RAM.
 
 Because my laptop has the memory capacity of a caffeinated squirrel, I had to make some choices:
@@ -24,11 +25,12 @@ The Eyes: Serper.dev. It scours the Thai internet so I don't have to.
 
 The Glue: Python and a very fragile main.py script that acts as a final filter to remove any unexpected Chinese characters (Qwen has... identity issues).
 
-[!TIP] A Small Note on Hardware: If you find this project useful and feel a surge of holiday spirit, I am currently accepting donations in the form of a MacBook M4 with 32GB of RAM. Think of it as a humanitarian effort to save my current laptop from an early, molten grave. Lol.
+[!TIP] A Small Note on Hardware: If you find this project useful and feel a surge of holiday spirit, I am currently accepting donations in the form of a MacBook M4 with 32GB of RAM. Think of it as a humanitarian effort to save my current laptop from an early, molten grave. Lol. JK
 
 ----
 
 🇹🇭 Why Bilingual? (The "Second Month" Ambition)
+--
 You might ask, "Why bother with a Thai version?"
 
 Well, I am currently in my second month of private Thai lessons. As anyone who has attempted to learn a tonal language knows, it is a process defined by high-stakes humiliation. By forcing my AI agent to produce reports in both English and Thai, I am essentially forcing myself to read Thai business terminology while I drink my Monday coffee.
@@ -37,4 +39,5 @@ It’s efficient. It’s ambitious. It’s probably going to result in me accide
 
 ----
 📬 Get the Report
+--
 If you’d like to receive these weekly reports (and witness the gradual improvement of both my Thai and my agent’s sanity), drop your email here:
