@@ -19,9 +19,9 @@ It is also, for the record, 100% free. It would show something like this on your
 
 🛠 The "I Have No Budget" Tech Stack
 --
-Building an AI agent is quite easy when you have a supercomputer and a venture capital firm paying your electric bill. It is significantly more "charming" when you are doing it on a MacBook Air M1 with 8GB of RAM.
+Building an AI agent is quite easy when you have a supercomputer and a venture capital firm paying your electric bill. It is significantly more "charming" when you are doing it on a MacBook Air M1 with 8GB of RAM. Since I've been Head of Program at a GovTech company in Indonesia, combined with 5 good years in Product Management specialized in Fintech, hence, the importance of data soverignity.
 
-Because my laptop has the memory capacity of a caffeinated squirrel, I had to make some choices:
+Then another issue, my laptop has the memory capacity of a caffeinated squirrel, I had to make some choices:
 
 The Brains: Ollama running Qwen2.5:3b. Why 3b? Because if I run anything larger, the fanless Air starts to emit a smell like a toaster oven, and my keyboard becomes hot enough to sear a scallop.
 
@@ -59,7 +59,7 @@ I couldn't just ask the AI to "Research in English and then translate to Thai" i
 
 Instead, I use a two-step sequential process with a manual stitch. It goes like this:
 
-<img width="1499" height="3065" alt="Mermaid Chart - Create complex, visual diagrams with text -2025-12-26-090840" src="https://github.com/user-attachments/assets/47ee315a-5851-435e-a5eb-7fbfdf94c74e" />
+<img width="299.8" height="613" alt="Mermaid Chart - Create complex, visual diagrams with text -2025-12-26-090840" src="https://github.com/user-attachments/assets/47ee315a-5851-435e-a5eb-7fbfdf94c74e" />
 
 ⚙️ Installation (Join the 8GB Club)
 -
@@ -127,6 +127,15 @@ python src/main.py
 ```
 Go grab a coffee. It takes about 3-5 minutes on the M1 Air. If everything works, you'll see the console producing research, then translation, and finally, a fresh email in your inbox.
 
+⚙️ What's Next for this project?
+-
+I've been thinking for a while. This can't be stopped here, simply because that's not how product management works. I should keep iterating. Here's the roadmap that I can think about:
+
+![Mermaid Chart - Create complex, visual diagrams with text -2025-12-27-102214](https://github.com/user-attachments/assets/478f9695-f662-4903-aa95-c7b8e2b50ec4)
+
+It might seem ambitious, but well, once a builder, always a builder.
+
 License
 --
 MIT. Go wild. Just don't blame me if the AI hallucinates that TikTok has bought the Bank of Thailand.
+
