@@ -32,7 +32,7 @@ analyst = Agent(
 # We explicitly force the "Thai Input -> English Output" workflow here
 report_task = Task(
     description=(
-        "1. Search for the latest trends in '{topic}'.\n"
+        "1. Search for the latest trends in '{topic}'**specifically within the Thailand market**.\n"
         "2. The search tool will provide data from the local database or internet.\n"
         "3. Read the Thai content provided by the tool.\n"
         "4. Synthesize the key points and write a comprehensive report.\n"
@@ -45,7 +45,7 @@ report_task = Task(
 # 5. RUN THE CREW
 if __name__ == "__main__":
     # You can change 'fintech' to 'ecommerce' or 'regulatory' to test different data
-    topic = 'fintech'
+    topic = 'fintech', 'regulatory', 'ecommerce'
     
     crew = Crew(
         agents=[analyst],
