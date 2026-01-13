@@ -98,3 +98,26 @@ Thailand’s fintech sector is poised for substantial growth driven by innovativ
 Run the scraper to populate your local database. It’s satisfying to watch it work while you drink coffee.
 ```bash
 python data/scraper.py
+
+### 2. See the agent in action
+Run the agent to sythesize the market trend stored in the local database first, and fallback to internet search only when it doesn't satisfy the parameters you set. Read the report on your terminal
+```bash
+python data/test_hybrid_crew.py
+
+---
+🔮 Roadmap: The "One Day" Dream
+Currently, this is a Single-Agent framework. It’s a lonely job, but someone has to do it.
+
+The Dream (Subject to Financial Availability):
+
+Hardware Upgrade: Buy a machine with more RAM than a 2015 toaster (M4, 16GB+).
+
+Multi-Agent Deployment:
+
+Agent A: The Researcher (Fast, neurotic).
+
+Agent B: The Quant (Cold, calculating).
+
+Agent C: The Writer (Anxious, but meets deadlines).
+
+Parallel Execution: Running them all at once without the computer catching fire.
